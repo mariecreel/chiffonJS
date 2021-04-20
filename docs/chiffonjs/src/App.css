@@ -4,11 +4,43 @@
 
 html{
   background-color: #0D3B66;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Leckerli One', cursive;
+  color: #DC0469
+}
+
+a{
+  color: #83b314;
+}
+
+a:hover{
+  background-color: #DC0469;
+  font-weight: bold;
+  color: #B3DA58;
+}
+
+main {
+  background-color: #FFFACC;
+  border-radius: 10px 30px;
+  border-color: #DC0469 /* Dogwood Rose */;
+  border-style: dashed;
+  border-width: 4px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact-list{
+  list-style-type: circle;
+  color: #DC0469;
 }
 
 .App {
   margin: 0 auto;
-  width: 60%;
+  max-width: 800px;
 }
 
 .App-logo{
@@ -18,5 +50,5 @@ html{
 .logo-wrapper{
   margin: 0 auto;
   padding: 20px 40px;
-  width: 50%;
+  max-width: 400px;
 }
