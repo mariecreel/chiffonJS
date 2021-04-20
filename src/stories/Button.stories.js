@@ -8,12 +8,12 @@ export default {
 
 export function Primary() {
   return(
-    <Button primary class= "button-round" text= "Download Template" disabled={false}/>
+    <Button primary text= "Upload Assets" disabled={false}/>
   )
 }
 
 export function Disabled(){
   return(
-    <Button disabled={true} class="button-round" text="Disabled..."/>
+    <Button disabled={true} text="Disabled..."/>
   )
 }
