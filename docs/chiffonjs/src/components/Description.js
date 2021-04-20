@@ -11,10 +11,9 @@ export default function Description(){
       <section className="section-content">
         <h2 className="section-title">About</h2>
         <p>
-          ChiffonJS is a simple-to-use dress-up game engine designed with
-          artists in mind. Create HTML/CSS based dress-up games using only
-          a directory of images; no in-depth web development knowledge is
-          required.
+          ChiffonJS is a dress-up game engine designed with
+          artists in mind. Create web-based dress-up games using only
+          a directory of images; no web development knowledge is required.
         </p>
         <p>
         ChiffonJS is currently in early development and not released to the
