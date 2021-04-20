@@ -3,7 +3,7 @@
 }
 
 html{
-  background-color: #0D3B66;
+  background-color: #092949;
   font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -28,7 +28,7 @@ a:hover{
 
 main {
   background-color: #FFFACC;
-  border-radius: 10px 30px;
+  border-radius: 30px;
   border-color: #DC0469 /* Dogwood Rose */;
   border-style: dashed;
   border-width: 4px;
@@ -47,7 +47,7 @@ main {
 
 .App {
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 800px;
 
 }
 
@@ -60,5 +60,15 @@ main {
   margin: auto;
   margin-top: -135px;
   max-width: 400px;
-  min-width: 200px;
+}
+
+@media (max-width: 375px){
+  main{
+    font-size: 1rem;
+  }
+
+  .logo-wrapper{
+    padding: 10px;
+    margin-top: -85px;
+  }
 }
