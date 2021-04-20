@@ -5,16 +5,16 @@ export default function Description(){
   return (
     <main>
       <div className="logo-wrapper">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="ChiffonJS Logo" />
       </div>
-      <h1 className="section-title">ChiffonJS: Simple Dress-up Game Engine</h1>
+      <h1 className="section-title">Simple Dress-up Game Engine</h1>
       <section className="section-content">
         <h2 className="section-title">About</h2>
         <p>
           ChiffonJS is a simple-to-use dress-up game engine designed with
           artists in mind. Create HTML/CSS based dress-up games using only
-          a directory of images— no in-depth web development knowledge is
-          required to build a ChiffonJS dress-up game.
+          a directory of images; no in-depth web development knowledge is
+          required.
         </p>
         <p>
         ChiffonJS is currently in early development and not released to the
@@ -25,7 +25,8 @@ export default function Description(){
       <section className="section-content">
         <h2 className="section-title">Contact</h2>
         <p>
-          Questions?
+          This is currently a one-person passion project, so please excuse a
+          slow response.
           <ul className="contact-list">
             <li>Email: <a href="mailto:hi@chiffonjs.com">hi@chiffonjs.com</a>
             </li>
