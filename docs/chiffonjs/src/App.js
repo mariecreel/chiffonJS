@@ -1,4 +1,5 @@
 import logo from './chiffonJSlogo.png';
+import Description from './components/Description';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         </div>
       </header>
+      <Description />
     </div>
   );
 }

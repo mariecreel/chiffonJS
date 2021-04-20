@@ -2,10 +2,13 @@
   box-sizing: border-box;
 }
 
+html{
+  background-color: #0D3B66;
+}
+
 .App {
   margin: 0 auto;
   width: 60%;
-  background-color: #0D3B66;
 }
 
 .App-logo{
