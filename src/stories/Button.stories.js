@@ -8,7 +8,7 @@ export default {
 
 export function Primary() {
   return(
-    <Button primary text= "Upload Assets" disabled={false}/>
+    <Button primary text= "Download Template" disabled={false}/>
   )
 }
 
