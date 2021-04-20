@@ -7,6 +7,10 @@ html{
   font-family: 'IBM Plex Mono', monospace;
 }
 
+body{
+  width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Leckerli One', cursive;
   color: #DC0469
@@ -28,10 +32,12 @@ main {
   border-color: #DC0469 /* Dogwood Rose */;
   border-style: dashed;
   border-width: 4px;
-  padding: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 100px;
+  font-size: 1.25rem;
 }
 
 .contact-list{
@@ -42,6 +48,7 @@ main {
 .App {
   margin: 0 auto;
   max-width: 800px;
+
 }
 
 .App-logo{
@@ -49,13 +56,8 @@ main {
 }
 
 .logo-wrapper{
-  background-color: #0D3B66;
-  padding: 40px;
-  margin-left: -100px;
-  margin-top: -60px;
+  padding: 20px;
+  margin-left: -120px;
+  margin-top: -135px;
   max-width: 400px;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: #DC0469;
-  border-width: 10px;
 }
