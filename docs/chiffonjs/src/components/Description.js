@@ -1,8 +1,12 @@
 import React from 'react';
+import logo from '../chiffonJSlogo.png';
 
 export default function Description(){
   return (
     <main>
+      <div className="logo-wrapper">
+        <img src={logo} className="App-logo" alt="logo" />
+      </div>
       <h1 className="section-title">ChiffonJS: Simple Dress-up Game Engine</h1>
       <section className="section-content">
         <h2 className="section-title">About</h2>
