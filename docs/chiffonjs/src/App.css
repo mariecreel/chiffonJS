@@ -47,7 +47,7 @@ main {
 
 .App {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 60%;
 
 }
 
@@ -57,7 +57,8 @@ main {
 
 .logo-wrapper{
   padding: 20px;
-  margin-left: -120px;
+  margin: auto;
   margin-top: -135px;
   max-width: 400px;
+  min-width: 200px;
 }
