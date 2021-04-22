@@ -6,7 +6,7 @@ export default function Button(props){
   if(props.disabled == false){
     return(
       <CuteButton className={props.class}
-              type="button">
+              type="button" onClick={props.onClick}>
           {props.text}
       </CuteButton>
     )
@@ -40,18 +40,24 @@ const CuteButton = styled.button`
   &:disabled{
     background-color: hsl(209, 79%, 24%);
     color: hsl(208, 80%, 68%);
-    border-color: hsl(208, 80%, 68%);
+    border-color: hsl(208, 80%, 68%)
+  }
+  /*
+    Need to use CollapsibleWrapper to give the button a different width
+    when it's used within the Collapsible component. This tip courtesy
+    of Josh W. Comeau's article on the styled components happy path– thank
+    you, Josh!
+
+    src: https://www.joshwcomeau.com/css/styled-components/
+  */
+  ${CollapsibleWrapper} & {
+    width: 100%;
+    text-align: left;
+    border-radius: 0px;
   }
 
-  ${CollapsibleWrapper} & {
-    /*
-      Need to use CollapsibleWrapper to give the button a different width
-      when it's used within the Collapsible component. This tip courtesy
-      of Josh W. Comeau's article on the styled components happy path– thank
-      you, Josh!
-      
-      src: https://www.joshwcomeau.com/css/styled-components/
-    */
-    width: 100%
+  ${CollapsibleWrapper} &::after{
+    content: '+';
+    float: right;
   }
 `
