@@ -1,18 +1,19 @@
 import React from 'react';
-import FileInput from './FileInput';
+import Input from './Input';
 
 export default {
-  title: 'FileInput',
-  component: FileInput
+  title: 'Input',
+  component: Input
 }
 
 export function AcceptZip(){
   let props = {
     id: "accept-zip",
     name: "accept-zip",
-    accept: ".zip"
+    accept: ".zip",
+    type: "file"
   }
   return(
-    <FileInput {...props}/>
+    <Input {...props}/>
   )
 }

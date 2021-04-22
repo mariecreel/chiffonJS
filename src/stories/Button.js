@@ -1,25 +1,54 @@
 import React from 'react';
-import './Button.css';
+import styled from 'styled-components';
 
 export default function Button(props){
   if(props.disabled == false){
     return(
-      <div className="button-wrapper">
-        <button className={props.class}
+      <Wrapper>
+        <CuteButton className={props.class}
                 type="button">
-          {props.text}
-        </button>
-      </div>
+            {props.text}
+        </CuteButton>
+      </Wrapper>
     )
   } else {
     return(
-      <div className="button-wrapper disabled">
-        <button className={props.class}
+      <Wrapper>
+        <CuteButton className={props.class}
                 type="button"
                 disabled>
           {props.text}
-        </button>
-      </div>
+        </CuteButton>
+      </Wrapper>
     )
   }
 }
+
+const CuteButton = styled.button`
+  border-radius: 40px;
+  border-style: dashed;
+  border-width: 5px;
+  border-color: hsl(332, 96%, 44%);
+  padding: 20px;
+  background-color: hsl(54, 100%, 90%);
+  color: hsl(332, 96%, 44%);
+  font-size: 1.25rem;
+  font-family: 'Leckerli One', cursive;
+
+  &:hover{
+    color: hsl(332, 96%, 64%);
+  }
+
+  &:disabled{
+    background-color: hsl(209, 79%, 24%);
+    color: hsl(208, 80%, 68%);
+    border-color: hsl(208, 80%, 68%);
+  }
+`
+
+const Wrapper = styled.div`
+  width: fit-content;
+  border-radius: 40px;
+  padding-bottom: 10px;
+  margin: 5px;
+`
