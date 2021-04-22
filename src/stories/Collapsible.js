@@ -4,11 +4,11 @@ import Button from './Button';
 
 export default function Collapsible(props){
   function collapsibleHandler(){
-    console.log(Content.style.visibility);
-    if(Content.style.visibility == "hidden"){
+    console.log(this.Content.style.visibility);
+    if(this.Content.style.visibility == "hidden"){
       Content.style.visibility = "visible"
     } else {
-      Content.style.visibility = "hidden"
+      this.Content.style.visibility = "hidden"
     }
   }
 
