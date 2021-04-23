@@ -36,9 +36,10 @@ const CuteLabel = styled.label`
   font-family: 'Leckerli One', cursive;
   width: 100%;
   cursor: pointer;
-  
+
   &:hover{
     color: hsl(332, 96%, 64%);
+    background-color: hsl(54, 100%, 80%);
   }
 `
 

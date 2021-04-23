@@ -35,6 +35,7 @@ const CuteButton = styled.button`
 
   &:hover{
     color: hsl(332, 96%, 64%);
+    background-color: hsl(54, 100%, 80%);
   }
 
   &:disabled{
