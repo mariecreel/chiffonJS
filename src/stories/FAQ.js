@@ -11,7 +11,7 @@ export default function Faq(props){
         Anyone can use Chiffon to build a game using only a directory of images.
         Chiffon is open source and released under the MIT license. There's no
         need to download Chiffon's source code to use the engine, but if you'd
-        like to explore the source code, you can find the code repository <a href="https://github.com/ncreel/chiffonJS">on Github</a>
+        like to explore the source code, you can find the code repository <a href="https://github.com/ncreel/chiffonJS">on Github</a>.
       </Collapsible>
       <Collapsible summary="How do I use Chiffon?">
         blah blah blah
