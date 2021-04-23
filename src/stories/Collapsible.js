@@ -2,39 +2,64 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 
-export default function Collapsible(props){
-  function collapsibleHandler(){
-    console.log(this.Content.style.visibility);
-    if(this.Content.style.visibility == "hidden"){
-      Content.style.visibility = "visible"
+export default class Collapsible extends React.Component{
+
+  constructor(props){
+    super(props);
+    this.state = {visible: false};
+
+  }
+
+  changeVisibility(){
+    if(!this.state.visible){
+      this.setState({
+        visible: true
+      });
     } else {
-      this.Content.style.visibility = "hidden"
+      this.setState({
+        visible: false
+      })
     }
   }
 
-  return (
+  render() {
+    return(
     <Wrapper>
-      <Button disabled={false}
-              text = {props.title}
-              onClick={collapsibleHandler}/>
-      <Content>
-        {props.children}
+      <Button disabled={false} onClick={this.changeVisibility.bind(this)}>
+        {this.props.title}
+      </Button>
+      <Content visible={this.state.visible}>
+        {this.props.children}
       </Content>
     </Wrapper>
-  )
+    )
+  }
 }
+
 /*
 exporting so that we can give the button a different style when inside Wrapper
 */
+
 export const Wrapper = styled.div`
   width: 100%;
 `
 
+/*
+  visibility of content dependent on state: start off invisible then change
+  to visible based on when user clicks the collapsible button.
+
+  method from styled-component docs:
+  https://styled-components.com/docs/basics#adapting-based-on-props
+*/
+
 const Content = styled.section`
-  font-size: 1.2rem;
-  color: hsl(332, 96%, 44%);
-  background-color: hsl(54, 100%, 90%);
-  border-style: dashed;
-  border-width: 2px;
-  visibility: hidden;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+  background-color: hsl(209, 79%, 24%);
+  color: hsl(208, 80%, 80%);
+  border-style: none dashed dashed;
+  border-width: 5px;
+  border-width-top: 0px;
+  display: ${props => props.visible ? "block" : "none"};
+  padding: 20px;
 `

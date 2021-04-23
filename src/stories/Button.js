@@ -7,7 +7,7 @@ export default function Button(props){
     return(
       <CuteButton className={props.class}
               type="button" onClick={props.onClick}>
-          {props.text}
+          {props.children}
       </CuteButton>
     )
   } else {
@@ -15,7 +15,7 @@ export default function Button(props){
     <CuteButton className={props.class}
             type="button"
             disabled>
-      {props.text}
+      {props.children}
     </CuteButton>
     )
   }
@@ -39,8 +39,8 @@ const CuteButton = styled.button`
 
   &:disabled{
     background-color: hsl(209, 79%, 24%);
-    color: hsl(208, 80%, 68%);
-    border-color: hsl(208, 80%, 68%)
+    color: hsl(208, 80%, 80%);
+    border-color: hsl(208, 80%, 80%);
   }
   /*
     Need to use CollapsibleWrapper to give the button a different width

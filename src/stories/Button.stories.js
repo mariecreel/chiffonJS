@@ -8,12 +8,16 @@ export default {
 
 export function Primary() {
   return(
-    <Button primary text= "Click me!" disabled={false}/>
+    <Button primary disabled={false}>
+      Click me!
+    </Button>
   )
 }
 
 export function Disabled(){
   return(
-    <Button disabled={true} text="Oh no, you can't click me..."/>
+    <Button disabled={true}>
+      "Oh no, you can't click me..."
+    </Button>
   )
 }
