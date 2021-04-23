@@ -9,7 +9,7 @@ export default function Input(props){
                id={props.id}
                name={props.name}
                accept={props.accept}/>
-               Upload {props.accept}
+               {props.children}
       </CuteLabel>
     </Wrapper>
    )

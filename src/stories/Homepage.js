@@ -22,10 +22,15 @@ export default function Homepage(){
       <ImgWrapper>
         <img src={logo} alt="Chiffon JS Logo"/>
       </ImgWrapper>
-      <h1>Build Dress-up Games!</h1>
-      <Input {... inputProps}/>
+      <h1>Build Dress-up Games for the web!</h1>
+      <h2>Are you ready to build a game?</h2>
+      <Input {... inputProps}> Upload Assets (.zip)</Input>
+      <h2>Do you need a template to get started?</h2>
       <Button disabled={false}>Download Assets Template</Button>
       <Faq/>
+      <footer>
+      Designed by Marie Creel - Contact: <a href="mailto:hi@chiffonjs.com">hi@chiffonjs.com</a>
+      </footer>
     </Wrapper>
   )
 }
@@ -44,6 +49,21 @@ const Wrapper = styled.main`
   font-size: 1rem;
   font-family: 'Leckerli One', cursive;
   text-align: center;
+
+  & a{
+    color: inherit;
+  }
+  & a:hover{
+    background-color: hsl(332, 97%, 76%) ;
+    font-weight:700;
+    color: hsl(34, 100%, 56%)
+    cursor: pointer;
+  }
+
+  h1{
+    font-size: 2.5rem;
+    margin: 40px 0px 60px;
+  }
 
   @media (max-width: 1280px){
     width: 80%;

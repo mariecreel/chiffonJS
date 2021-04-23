@@ -30,23 +30,16 @@ export default function Faq(props){
 }
 
 const Wrapper = styled.section`
-  margin: 20px 0px;
+  margin: 40px 0px 20px;
 
   h2 {
     margin: 0px;
     padding: 10px;
+    padding-bottom: 20px;
     color: hsl(332, 96%, 44%);
     font-size: 2rem;
     font-family: 'Leckerli One', cursive;
     text-align: center;
   }
-  & a{
-    color: inherit;
-  }
-  & a:hover{
-    background-color: hsl(332, 97%, 76%) ;
-    font-weight:700;
-    color: hsl(34, 100%, 56%)
-    cursor: pointer;
-  }
+
 `
