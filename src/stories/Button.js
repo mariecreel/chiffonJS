@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Wrapper as CollapsibleWrapper } from './Collapsible';
 
 export default function Button(props){
   if(props.disabled == false){
     return(
       <CuteButton className={props.class}
-              type="button" onClick={props.onClick}>
+              type="button">
           {props.children}
       </CuteButton>
     )
@@ -41,23 +40,5 @@ const CuteButton = styled.button`
     background-color: hsl(209, 79%, 24%);
     color: hsl(208, 80%, 80%);
     border-color: hsl(208, 80%, 80%);
-  }
-  /*
-    Need to use CollapsibleWrapper to give the button a different width
-    when it's used within the Collapsible component. This tip courtesy
-    of Josh W. Comeau's article on the styled components happy path– thank
-    you, Josh!
-
-    src: https://www.joshwcomeau.com/css/styled-components/
-  */
-  ${CollapsibleWrapper} & {
-    width: 100%;
-    text-align: left;
-    border-radius: 0px;
-  }
-
-  ${CollapsibleWrapper} &::after{
-    content: '+';
-    float: right;
   }
 `

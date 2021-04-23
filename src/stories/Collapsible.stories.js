@@ -8,7 +8,7 @@ export default {
 
 export function SimpleCollapsible(){
   return(
-    <Collapsible title = "Why did the chicken cross the road?">
+    <Collapsible summary = "Why did the chicken cross the road?">
     ...because it wanted to get to the other side! *ba dum tsh*
     </Collapsible>
   )
