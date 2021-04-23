@@ -9,7 +9,7 @@ export default {
 export function SimpleCollapsible(){
   return(
     <Collapsible summary = "Why did the chicken cross the road?">
-    ...because it wanted to get to the other side! *ba dum tsh*
+    To get to the other side! <i>*ba dum tsh*</i>
     </Collapsible>
   )
 }
