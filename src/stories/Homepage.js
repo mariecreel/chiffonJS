@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Faq from './Faq';
 import Button from './Button';
-import Input from './Input'
+import Input from './Input';
+import logo from '../images/chiffonJSlogo.png';
 
 export default function Homepage(){
   let inputProps = {
@@ -18,9 +19,12 @@ export default function Homepage(){
   */
   return (
     <Wrapper>
-      <h1>Chiffon: Build Dress-up Games!</h1>
+      <ImgWrapper>
+        <img src={logo} alt="Chiffon JS Logo"/>
+      </ImgWrapper>
+      <h1>Build Dress-up Games!</h1>
       <Input {... inputProps}/>
-      <Button>Download Assets Template</Button>
+      <Button disabled={false}>Download Assets Template</Button>
       <Faq/>
     </Wrapper>
   )
@@ -29,13 +33,90 @@ export default function Homepage(){
 const Wrapper = styled.main`
   width: 60%;
   margin: 0 auto;
+  margin-top: 140px;
   border-radius: 40px;
   border-style: dashed;
   border-width: 5px;
-  border-color: hsl(332, 96%, 44%);
   padding: 20px;
   background-color: hsl(54, 100%, 90%);
   color: hsl(332, 96%, 44%);
+  border-color: hsl(332, 96%, 44%);
   font-size: 1rem;
   font-family: 'Leckerli One', cursive;
+  text-align: center;
+
+  @media (max-width: 1280px){
+    width: 80%;
+    margin-top: 140px;
+  }
+
+  @media (max-width: 800px){
+    width: 80%;
+    margin-top: 80px;
+  }
+
+  @media (max-width: 414px){
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
+    margin-top: 90px
+  }
+
+  @media (max-width: 375px){
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
+    margin-top: 90px
+  }
+
+  @media (max-width: 320px){
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
+    margin-top: 75px
+  }
+`
+
+const ImgWrapper = styled.div`
+  margin-top: -140px;
+  text-align: center;
+  & img{
+    width: 50%;
+  }
+
+  @media (max-width: 1280px){
+    margin-top: -125px;
+    & img{
+      width: 50%
+    }
+  }
+
+  @media (max-width: 1000px){
+    margin-top: -95px;
+  }
+
+  @media (max-width: 800px){
+    margin-top: -80px;
+  }
+
+  @media (max-width: 414px){
+    margin-top: -85px;
+    & img{
+      width: 80%
+    }
+  }
+
+  @media (max-width: 375px){
+    margin-top: -80px;
+    & img{
+      width: 80%
+    }
+  }
+
+  @media (max-width: 320px){
+    margin-top: -70px;
+    & img{
+      width: 80%
+    }
+  }
 `

@@ -1,12 +1,10 @@
 import './App.css';
-import logo from './images/chiffonJSlogo.png';
+import Homepage from './stories/Homepage'
 
 function App() {
   return (
     <div className="App">
-      <main>
-      blah blah need stuff here
-      </main>
+      <Homepage/>
     </div>
   );
 }

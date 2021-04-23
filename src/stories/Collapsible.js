@@ -21,6 +21,7 @@ exporting so that we can give the button a different style when inside Wrapper
 const Wrapper = styled.details`
   width: 100%;
   margin-bottom: 10px;
+  text-align: left;
 `
 
 const Summary = styled.summary`
@@ -28,7 +29,7 @@ const Summary = styled.summary`
   border-width: 5px;
   border-color: hsl(332, 96%, 44%);
   padding: 20px;
-  background-color: hsl(54, 100%, 90%);
+  background-color: hsl(34, 100%, 70%);
   color: hsl(332, 96%, 44%);
   font-size: 1.25rem;
   font-family: 'Leckerli One', cursive;
@@ -42,7 +43,7 @@ const Summary = styled.summary`
 const Content = styled.p`
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
-  background-color: hsl(54, 100%, 80%);
+  background-color: hsl(34, 100%, 84%);
   color: hsl(332, 96%, 44%);
   border-style: none dashed dashed;
   border-width: 5px;

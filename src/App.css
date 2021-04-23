@@ -4,6 +4,7 @@
 
 html, body {
   height: 100%;
+  background-color: hsl(78, 80%, 56%);
 }
 
 .max-width-wrapper{

@@ -24,18 +24,18 @@ const CuteButton = styled.button`
   border-radius: 40px;
   border-style: dashed;
   border-width: 5px;
-  border-color: hsl(332, 96%, 44%);
   padding: 20px;
-  background-color: hsl(54, 100%, 90%);
+  background-color: hsl(332, 98%, 84%);
   color: hsl(332, 96%, 44%);
+  border-color: hsl(332, 96%, 44%);
   font-size: 1.25rem;
   font-family: 'Leckerli One', cursive;
   width: fit-content;
   cursor: pointer;
+  margin: 5px 0;
 
   &:hover{
-    color: hsl(332, 96%, 64%);
-    background-color: hsl(54, 100%, 80%);
+    background-color: hsl(332, 97%, 76%);
   }
 
   &:disabled{
