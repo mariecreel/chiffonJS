@@ -23,9 +23,9 @@ export default function Homepage(){
         <img src={logo} alt="Chiffon JS Logo"/>
       </ImgWrapper>
       <h1> Build Dress-up Games for the web! </h1>
-      <h3> Are you ready to build a game? </h3>
+      <h3> Ready to build a game? </h3>
       <Input {... inputProps}> Upload Assets (.zip)</Input>
-      <h3> Do you need a template to get started? </h3>
+      <h3> Need a template to get started? </h3>
       <Button disabled={false}>Download Assets Template</Button>
       <Faq/>
       <footer>
