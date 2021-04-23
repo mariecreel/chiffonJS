@@ -20,6 +20,7 @@ exporting so that we can give the button a different style when inside Wrapper
 
 const Wrapper = styled.details`
   width: 100%;
+  margin-bottom: 10px;
 `
 
 const Summary = styled.summary`
