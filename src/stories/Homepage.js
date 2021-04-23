@@ -30,7 +30,7 @@ export default function Homepage(){
       <Faq/>
       <footer>
       Built by Marie Creel - Contact: <a href="mailto:hi@chiffonjs.com">hi@chiffonjs.com</a> -
-      Twitter: <a href="https://twitter/toofyMaw">@toofyMaw</a> -
+      Twitter: <a href="https://twitter/toofyMaw">@toofyMaw</a>
       </footer>
     </Wrapper>
   )
