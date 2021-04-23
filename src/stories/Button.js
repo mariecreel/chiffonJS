@@ -31,6 +31,7 @@ const CuteButton = styled.button`
   font-size: 1.25rem;
   font-family: 'Leckerli One', cursive;
   width: fit-content;
+  cursor: pointer;
 
   &:hover{
     color: hsl(332, 96%, 64%);
@@ -40,5 +41,6 @@ const CuteButton = styled.button`
     background-color: hsl(209, 79%, 24%);
     color: hsl(208, 80%, 80%);
     border-color: hsl(208, 80%, 80%);
+    cursor: not-allowed;
   }
 `

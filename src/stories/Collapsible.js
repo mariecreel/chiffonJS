@@ -31,6 +31,7 @@ const Summary = styled.summary`
   color: hsl(332, 96%, 44%);
   font-size: 1.25rem;
   font-family: 'Leckerli One', cursive;
+  cursor: pointer;
 
   &:hover{
     color: hsl(332, 96%, 64%);
