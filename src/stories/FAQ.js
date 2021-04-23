@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export default function Faq(props){
   return (
     <Wrapper>
-      <h2>Frequently Asked Questions</h2>
+      <h2> Frequently Asked Questions </h2>
       <Collapsible summary="What is Chiffon?">
         Chiffon is a game engine built specifically for creating dress-up games.
         Anyone can use Chiffon to build a game using only a directory of images.
@@ -41,5 +41,4 @@ const Wrapper = styled.section`
     font-family: 'Leckerli One', cursive;
     text-align: center;
   }
-
 `

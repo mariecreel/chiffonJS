@@ -32,7 +32,7 @@ const CuteButton = styled.button`
   font-family: 'Leckerli One', cursive;
   width: fit-content;
   cursor: pointer;
-  margin: 5px 0;
+  margin: 0;
 
   &:hover{
     background-color: hsl(332, 97%, 76%);
